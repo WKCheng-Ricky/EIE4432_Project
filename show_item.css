@@ -1,0 +1,30 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    place-items: center;
+    
+}
+
+.grid_inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    border: 3px solid #dfdfdf;
+
+}
+
+.grid_inner img{
+    width: 200px; 
+    height: 200px; 
+    padding: 15px;
+    margin: 5px 5px 22px 0;
+    object-fit: cover;
+}
+
+.grid_inner p{
+    padding: 15px;
+    margin: 5px 5px 22px 0;
+    background: #f1f1f1;
+}
