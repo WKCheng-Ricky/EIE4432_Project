@@ -13,6 +13,12 @@
         require "header.php";
     ?>
 
+    <?php 
+        if(isset($_GET['reset'])){
+            echo '<p style="color:green;">Password updated.</p>';
+        }
+    ?>
+
     <?php
         
         if(isset($_SESSION['shopkeeper'])){

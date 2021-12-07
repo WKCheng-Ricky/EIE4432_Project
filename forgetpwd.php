@@ -42,6 +42,11 @@
     }
 
     </style>
+    <?php
+        if(isset($_GET['error'])){
+            echo '<p style="color:red;">User does not exist.</p>';
+        }
+    ?>
 
     <form class="header" action="resetpwd.php" method="post">
         <div >

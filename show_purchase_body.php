@@ -64,9 +64,16 @@
         }
     </style>
 
+    <?php
+        if(empty($salesarr)){
+            echo '<p>There have no purchase recorded.</p>';
+        }
+    ?>
+
     <table id="customers">
         <tr>
             <th>User ID</th>
+            <th>User's nick name</th>
             <th>Date of purchase</th>
             <th>Purchase Details</th>
         </tr>
@@ -74,9 +81,17 @@
             foreach($salesarr as $sale){
                 $itemarr = $sale['itemJSON'];
                 $itemarr = json_decode($itemarr);
+                $userId = $sale['userId'];
+
+                $sql = "SELECT nickname FROM users WHERE id= {$userId}"; 
+                $result = mysqli_query($conn, $sql);
+                if($row = mysqli_fetch_assoc($result)){
+                    $username = $row['nickname'];
+                }
                 
                 echo "<tr>";
                 echo    "<td>" . $sale['userId'] . "</td>";
+                echo    "<td>" . $username . "</td>";
                 echo    "<td>" . $sale['date'] . "</td>";
                 echo    "<td>";
 

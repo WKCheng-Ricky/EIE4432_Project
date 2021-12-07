@@ -48,7 +48,7 @@
                             echo '<div>';
                                 echo  "<p>Name: {$name}</p>";
                                 echo  "<p>Stock: {$stock}</p>";
-                                echo  "<p>Name: {$price}</p>";
+                                echo  "<p>Price: $ {$price}</p>";
                             echo '</div>';    
                         echo '</div>';
                     }

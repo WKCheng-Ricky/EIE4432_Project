@@ -126,7 +126,7 @@
                             echo '<div>';
                                 echo    "<p>Name: {$name}</p>";
                                 echo    "<p>In Stock: {$stock}</p>";
-                                echo    "<p>Price: {$price}</p>";
+                                echo    "<p>Price: $ {$price}</p>";
 
                                 echo    '<form action="add_to_shopping_cart.php" method="post">';
                                     echo    '<div class="grid_inner_er">';

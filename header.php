@@ -85,9 +85,9 @@
                }
             }
 
-            if(isset($_GET['signup'])){
-                    echo '<p style="color: green;font-size: large;">User created!</p>';
-            }
+            // if(isset($_GET['signup'])){
+            //         echo '<p style="color: green;font-size: large;">User created!</p>';
+            // }
             ?>
 
     <div id="login_prompt" class="modal" style="display:none">

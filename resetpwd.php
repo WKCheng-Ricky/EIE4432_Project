@@ -70,7 +70,32 @@
 ?>
 
 
+<style>
+   .reset input{ 
+        padding: 15px;
+        margin: 5px 5px 22px 0;
+        background: #f1f1f1;
+    }
 
+    .reset input[type=text], .reset input[type=password] {
+        width: 100%;
+        /* display: inline-block; */
+        display: inline-block;
+        border: none;
+    }
+
+    .header_btn {
+        background-color: #04AA6D;
+        color: white;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+</style>
 
 <!DOCTYPE html>
 <html>
@@ -85,7 +110,7 @@
 
     <h1>Reset Password</h1>
 
-    <form class="" action="resetpwd.php" method="post">
+    <form class="reset" action="resetpwd.php" method="post">
         <div class="">
             <label for="uname"><b>Username/ Email</b></label>
             <input type="text" placeholder="Enter Username/ Email..." name="uname" value="<?php echo $uname?>" readonly>
