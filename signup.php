@@ -104,20 +104,20 @@
         <div style="padding=5px">
             <div class="signup">
                 <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname"  required>
+                <input type="text" placeholder="Enter Username" name="uname" value="<?php if(isset($username)) echo $username; ?>" required>
 
                 <label for="unick"><b>Nick name</b></label>
-                <input type="text" placeholder="Enter Nick name" name="unick">
+                <input type="text" placeholder="Enter Nick name" name="unick" value="<?php if(isset($nickname)) echo $nickname; ?>" >
 
                 <label for="pwd"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="pwd" required>
                 
               
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="email" value="<?php if(isset($email)) echo $email; ?>" required>
                 
                 <label for="birthday"><b>Birthday:</b></label>
-                <input type="date" id="birthday" name="birthday">
+                <input type="date" id="birthday" value="<?php if(isset($birthday)) echo $birthday; ?>" name="birthday">
 
                 <fieldset data-role="controlgroup">
                 <legend>Choose your gender:</legend>
